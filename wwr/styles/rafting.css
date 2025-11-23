@@ -1,11 +1,10 @@
 :root {
     --primary-blue: #0A3A67;
     --white: #ffffff;
-    --text-dark: #1a1a1a;
-    --heading-font: "Times New Roman", serif;
-    --body-font: Arial, sans-serif;
+    --text-dark: #211313;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica sans-serif;
 }
-
 
 * {
     margin: 0;
@@ -19,39 +18,15 @@ body {
     background-color: var(--white)
 }
 
-
 header, main, footer {
-    width: 100%;
-    max-width: 1100px;
+    width: 840px;
     margin: 0 auto;
 }
 
-
-header {
-    display: flex;
-    align-items: center;
-    padding: 20px 0;
-    gap: 30px;
-}
-
-header img {
-    width: 130px;
-}
-
-nav ul {
-    list-style: none;
-}
-
 nav ul li {
-    margin-bottom: 10px;
+    margin-bottom: 5px
+   
 }
-
-nav ul li a {
-    text-decoration: none;
-    color: #000;
-    font-size: 1rem;
-}
-
 
 .hero {
     position: relative;
@@ -63,7 +38,6 @@ nav ul li a {
     height: auto;
     display: block;
 }
-
 
 .hero h1 {
     position: absolute;
@@ -78,29 +52,28 @@ nav ul li a {
     background-color: rgba(10, 58, 103, 0.8);  /* translucent dark blue bar */
 }
 
-
 .hero article {
     position: absolute;
     bottom: 20px;
-    left: 20px;
-    right: 20px;
+    left: 10px;
+    right: 10px;
     background-color: rgba(10, 58, 103, 0.8);
     color: white;
-    padding: 20px;
-    font-size: 1rem;
+    padding: 8px;
+    font-size: 1.2rem;
+    line-height: 22px;
     border-radius: 4px;
 }
 
-
 .hero article img {
-    position: absolute;
-    right: 20px;
-    bottom: -20px;
-    width: 90px;
-    border: 4px solid white;
+    position: relative;
+    right: 5px;
+    bottom: -4px;
+    width: 149px;
+    border: 4px solid rgb(105, 6, 6);
     float: right;
+   
 }
-
 
 section h2 {
     text-align: center;
@@ -109,16 +82,14 @@ section h2 {
     padding: 10px 0;
     margin-top: 40px;
     font-family: var(--heading-font);
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
-
 
 section p {
     padding: 15px 25px;
     font-size: 1.05rem;
-    line-height: 1.5;
+    line-height: 1.8;
 }
-
 
 footer {
     text-align: center;
@@ -129,13 +100,20 @@ footer {
 
 footer p {
     margin-bottom: 15px;
+    font-family: Lato;
+    font-size: 1.3rem;
 }
 
 footer img {
-    width: 35px;
+    width: 70px;
     margin: 0 10px;
+   
 }
 
 .socialmedia a {
   text-decoration: none;
+  
 }
+
+
+
