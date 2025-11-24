@@ -8,7 +8,7 @@
 :root {
     --color1: white;
     --color2: black;
-    --color3: darkblue;
+    --color3: rgb(29, 73, 97);
     --height: auto;
     --alignment: center;
 }
@@ -16,17 +16,27 @@
 nav {
     background-color: var(--color3);
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: var(--color1);
     display: block;
     padding: 20px;
+    text-decoration: none;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 
 h1 {
     color: var(--color3);
+    border-bottom: 1px solid var(--color3);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 img {
@@ -38,8 +48,7 @@ img {
 }
 
 
-main {
-    max-width: 840px;
+main { 
     padding: 15px;
 }
 
@@ -47,6 +56,9 @@ aside {
     width: 20rem;
     text-align: var(--alignment);
     position: relative;
+    grid-column: 1;
+    grid-row: 1;
+   
 }
 
 aside h2 {
@@ -60,6 +72,16 @@ aside h2 {
 aside img {
     width: 200px;
     height: var(--height);
+}
+
+header, footer, .grid {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 main img {
