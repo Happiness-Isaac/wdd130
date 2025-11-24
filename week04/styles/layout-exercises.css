@@ -5,7 +5,7 @@
 }
 
 body {
-    margin: 1rem;
+    margin: 20rem;
     font-family: monospace;
     font-size: 1.2rem;
 }
@@ -23,32 +23,46 @@ div {
 
 .flex {
     background-color: #aba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* write declarations here */
 
 }
 
 .grid {
     background-color: #abb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* enter declarations here */
 
 }
 
 .container2 {
-    /* write declarations here */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* write declarations
+     here */
 
 }
 
 .two {
     background-color: #ace;
     height: 100px;
+
 }
 
 .container3 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
     /* write declarations here */
 
 }
 
 .columns-3 {
+    grid-column: 1/4;
     /* write declaration here */
 
 }
