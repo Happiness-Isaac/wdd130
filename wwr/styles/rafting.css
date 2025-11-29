@@ -21,6 +21,7 @@ header {
     grid-template-columns: auto 1fr;
     align-items: center;
     background-color: var(--secondary-blue);
+    color: var(--white);
 }
 
 header img { 
