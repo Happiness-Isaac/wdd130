@@ -1,9 +1,13 @@
 :root {
     --primary-blue: #0A3A67;
+    --secondary-blue:#0B4276; 
+    --overlay-blue: rgba(10, 58, 103, 0.8);
     --white: #ffffff;
     --text-dark: #211313;
+    --dark-red: rgb(149, 14, 14);
     --heading-font: "Times New Roman", "Georgia", serif;
-    --body-font: Arial, Helvetica sans-serif;
+    --body-font: Arial, Helvetica, sans-serif;
+    
 }
 
 * {
@@ -16,13 +20,12 @@ header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    background-color: #0b4276;
+    background-color: var(--secondary-blue);
 }
 
 header img { 
     margin-left: 90px;
 }
-
 
 nav ul {
     display: flex;
@@ -37,7 +40,6 @@ nav ul {
 nav a {
     text-decoration: none;
     color: var(--white);
-    
     font-family: Lato;
     padding: 10px;
 }
@@ -76,10 +78,10 @@ nav ul li {
     text-align: center;
     font-family: var(--heading-font);
     font-size: 2.5rem;
-    color: white;
+    color: var(--white);
     font-weight: bold;
     padding: 10px 0;
-    background-color: rgba(10, 58, 103, 0.8);  /* translucent dark blue bar */
+    background-color: var(--overlay-blue);
 }
 
 .hero article {
@@ -87,7 +89,7 @@ nav ul li {
     bottom: 55px;
     left: 30px;
     right: 30px;
-    background-color: rgba(10, 58, 103, 0.8);
+    background-color: var(--overlay-blue);
     color: white;
     padding: 25px;
     line-height: 22px;
@@ -95,11 +97,10 @@ nav ul li {
 }
 
 .hero article img {
-    position: relative;
     right: 5px;
-    bottom: -4px;
+    bottom: 7px;
     width: 149px;
-    border: 4px solid rgb(105, 6, 6);
+    border: 4px solid var(--dark-red);
     float: right; 
 }
 
@@ -108,10 +109,10 @@ nav ul li {
 }
 
 .history-grid img {
-    width: 150px;
+    width: 170px;
     height: 130px; 
-    margin-top: 15px;
-    border: 4px solid rgb(105, 6, 6);
+    margin-top: 20px;
+    border: 4px solid var(--dark-red)
 }
 
 section h2 {
@@ -154,10 +155,11 @@ section p {
 }
  
 footer {
-    background-color: #0b4276;
+    background-color: var(--secondary-blue);
     color: var(--white);
     margin-top: 20px;
-    padding: 10px 20px;
+    padding: 10px 30px;
+     font-family: Lato;
 }
 
 .footer-layer {
