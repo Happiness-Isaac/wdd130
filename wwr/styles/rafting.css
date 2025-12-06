@@ -249,7 +249,6 @@ fieldset {
   grid-gap: .5rem;
   margin: 1rem;
   padding: 1rem;
-  justify-items: auto;
 }
 
 .service-image {
