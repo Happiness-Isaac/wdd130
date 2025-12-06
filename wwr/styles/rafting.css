@@ -4,6 +4,7 @@
     --overlay-blue: rgba(10, 58, 103, 0.8);
     --white: #ffffff;
     --text-dark: #211313;
+    --boder-color: #ccc;
     --dark-red: rgb(149, 14, 14);
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -91,7 +92,7 @@ nav ul li {
     left: 30px;
     right: 30px;
     background-color: var(--overlay-blue);
-    color: white;
+    color: var(--white);
     padding: 25px;
     line-height: 22px;
     border-radius: 4px;
@@ -119,7 +120,7 @@ nav ul li {
 section h2 {
     text-align: center;
     background-color: var(--primary-blue);
-    color: white;
+    color: var(--white);
     padding: 10px 0;
     margin-top: 40px;
     font-family: var(--heading-font);
@@ -209,10 +210,10 @@ footer p {
 }
 
 .form area {
-    background: white;
+    background: var(--white);
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--boder-color);
 }
 
 form input[type="text"],
@@ -221,7 +222,7 @@ form textarea {
     width: 100%;
     padding: 10px;
     margin: 0 15px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--boder-color);
     border-radius: 5px;
 }
 
