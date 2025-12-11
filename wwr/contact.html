@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Smooth Waves Rafting</title>
-    <meta name="description" content="Contact smooth Waves Rafting for reservations, questions, or feedback.">
+    <meta name="description"
+        content="Get in touch with Smooth Waves for reservations, questions, or customized rafting trips. We're here to help you plan your perfect river adventure.">
     <meta name="author" content="Happiness Isaac">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -22,62 +23,77 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <section class="contact-info">
+        <div class="contact-info">
             <h1>Smooth Waves Rafting</h1>
-            <p>Plot 12 Admiralty Way. Lekki Penninsula</p>
-            <p>Lagos, Nigeria</p>
-            <p>+234(0) 7087869355</p>
-            <p>info@smoothwaves.com</p>
-        </section>
+            <p>
+                Plot 12 Admiralty Way. Lekki Phase 1 <br>
+                Lagos,Nigeria <br>
+                +234(0) 7087869355 <br>
+                info@smoothwaves.com
+            </p>
 
-        <section class="contact-display">
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8973.712900286504!2d3.461580176350118!3d6.449751521621923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1765027958272!5m2!1sen!2sng"
-                    width="600" height="450" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+            <div class="contact-wrapper">
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8973.712900286504!2d3.461580176350118!3d6.449751521621923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1765027958272!5m2!1sen!2sng"
+                        width="600" height="450" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-            <div class="form-area">
+                </div>
                 <form>
-                    <label for="fullname">Name</label>
-                    <input type="text" id="fullname" name="fullname" placeholder="Placeholder" required>
+                    <div class="form-item">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your full name">
+                    </div>
 
-                    <label for="useremail">Email</label>
-                    <input type="email" id="useremail" name="useremail" placeholder="Placeholder" required>
+                    <div class="form-item">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email address">
+                    </div>
 
-                    <fieldset>
-                        <legend>Purpose of Your Message</legend>
+                    <p>Message Purpose</p>
+                    <div class="form-item column2">
 
-                        <label for="general">
-                            <input type="radio" id="general" name="purpose" value="general" required>
+                        <label for="generalinquiry">
+                            <input type="radio" name="Purpose" id="generalinquiry" value="General Inquiry">
                             General Inquiry
                         </label>
+                        <p></p>
 
-                        <label for="reservation">
-                            <input type="radio" id="reservation" name="purpose" value="reservation">
+                        <label for="reservationquestion">
+                            <input type="radio" name="Purpose" id="reservationquestion" value="Reservation Question">
                             Reservation Question
                         </label>
 
-                        <label for="suggestion">
-                            <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                        <p></p>
+
+                        <label for="websitesuggestion">
+                            <input type="radio" name="Purpose" id="websitesuggestion" value="Website Suggestion">
                             Website Suggestion
                         </label>
+                    </div>
 
-                    </fieldset>
+                    <div class="form-item">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="4" placeholder="Type here"></textarea>
+                    </div>
 
+                    <div class="form-item">
+                        <p></p>
+                        <label for="subscribe">
+                            <input type="checkbox" name="subscribe" id="subscribe">
+                            Please Subscribe me to the monthly newsletter
+                        </label>
+                    </div>
 
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" rows="5" placeholder="Type here"></textarea>
-
-                    <label>
-                        <input type="checkbox" id="subscribe" name="subscribe"> Please Subscribe to monthly newsletter
-                    </label>
-                    <button type="submit">Connect With Us</button>
+                    <div class="form-item column2">
+                        <button type="submit">Get in Touch!</button>
+                    </div>
                 </form>
             </div>
-        </section>
+        </div>
 
         <section class="service">
             <h2>We are Here To Serve You</h2>
