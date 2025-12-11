@@ -297,7 +297,6 @@ form button {
 .service h2 {
     text-align: center;
     background-color: var(--white);
-    color: var(--text-dark);
     padding: 10px 0;
     margin-top: 20px;
     font-size: 2rem;
